@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+.profile-image {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+/*----------------------
+    Grid Container
+----------------------*/
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header"
+    "navigation"
+    "main";
+}
+
+/*---header---*/
+header {
+  grid-area: header;
+  background-color: #767bbd;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header h1 {
+  color: #fff;
+  margin: 0 auto 0 0;
+  padding-left: 5px;
+  font-size: 1em;
+}
+
+header h3 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 0.75em;
+  padding-left: 5px;
+  margin-left: 5px;
+}
+
+header span {
+  font-weight: 200;
+}
+
+.bell-container {
+  border-right: solid 1px black;
+  padding: 5px;
+  margin: 10px;
+  height: 30px;
+  width: 30px;
+  position: relative;
+}
+
+/*---nav---*/
+nav {
+  grid-area: navigation;
+  background-color: #43478b;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-icon {
+  height: 45px;
+  width: 45px;
+  padding: 7px;
+}
+
+main {
+  grid-area: main;
+  display: grid;
+}
+
+.widget-container-full,
+.widget-container-half {
+  width: 95vw;
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: 55px 1fr;
+    grid-template-areas:
+      "header header"
+      "navigation main";
+  }
+
+  main {
+    grid-template-columns: 50%;
+  }
+
+  .traffic,
+  .social {
+    grid-column: 1 / span 2;
+  }
+
+  .daily,
+  .members,
+  .message {
+    grid-column: 1 / span 1;
+  }
+
+  .mobile,
+  .activity,
+  .settings {
+    grid-column: 2 / span 1;
+  }
+
+  .widget-container-full {
+    width: 90vw;
+  }
+
+  .widget-container-half {
+    width: 45vw;
+  }
+}
