@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap"
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -236,12 +236,12 @@
         <h3>New Members</h3>
 
         <div class="members-container">
-          <img src="images/member-1.jpg" class="profile-image" />
+          <img src="images/member-1.jpg" class="profile-image members-image" />
           <div class="members-text">
             <p>Victoria Chambers</p>
             <a href="#">victoria.chambers80@example.com</a>
           </div>
-          <p>10/15/15</p>
+          <p class="members-date">10/15/15</p>
         </div>
 
         <div class="members-container">
@@ -250,7 +250,7 @@
             <p>Dale Byrd</p>
             <a href="#">dale.byrd52@example.com</a>
           </div>
-          <p>10/15/15</p>
+          <p class="members-date">10/15/15</p>
         </div>
 
         <div class="members-container">
@@ -259,22 +259,22 @@
             <p>Dawn Wood</p>
             <a href="#">dawn.wood16@example.com</a>
           </div>
-          <p>10/15/15</p>
+          <p class="members-date">10/15/15</p>
         </div>
 
         <div class="members-container">
           <img src="images/member-4.jpg" class="profile-image" />
           <div class="members-text">
-            <p>Victoria Chambers</p>
+            <p>Dan Oliver</p>
             <a href="#">dan.oliver82@example.com</a>
           </div>
-          <p>10/15/15</p>
+          <p class="members-date">10/15/15</p>
         </div>
       </section>
 
       <!-- recent activity -->
       <section class="recent-activity">
-        <h3>New Members</h3>
+        <h3>Recent Activity</h3>
 
         <div class="activity-container">
           <img src="images/member-1.jpg" class="profile-image" />
@@ -282,7 +282,7 @@
             <p>Victoria Chambers commented on YourApp's SEO Tips</p>
             <p>4 hours ago</p>
           </div>
-          <p>arrow</p>
+          <p class="arrow">></p>
         </div>
 
         <div class="activity-container">
@@ -291,7 +291,7 @@
             <p>Dale Byrd liked the post Facebook's Changes for 2016</p>
             <p>5 hours ago</p>
           </div>
-          <p>arrow</p>
+          <p class="arrow">></p>
         </div>
 
         <div class="activity-container">
@@ -300,7 +300,7 @@
             <p>Dawn Wood commented on Facebook's Changes for 2016</p>
             <p>5 hours ago</p>
           </div>
-          <p>arrow</p>
+          <p class="arrow">></p>
         </div>
 
         <div class="activity-container">
@@ -309,21 +309,22 @@
             <p>Dan Oliver posted YourApp's SEO Tips</p>
             <p>1 day ago</p>
           </div>
-          <p>arrow</p>
+          <p class="arrow">></p>
         </div>
       </section>
 
       <!-- messaging widget -->
       <section class="message">
+        <h3 class="message-user">Message User</h3>
         <form class="widget-container">
           <input
             type="text"
-            placeholder="Search for user"
+            placeholder="Search for User"
             class="form-field"
             id="userField"
           />
           <textarea
-            placeholder="Message for user"
+            placeholder="Message for User"
             class="form-area"
             id="messageField"
           ></textarea>
