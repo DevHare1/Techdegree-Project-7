@@ -135,9 +135,9 @@ let mobileChart = new Chart(mobileCanvas, {
 });
 
 //messaging
-const user = getElementById("userField");
-const message = getElementById("messageField");
-const send = getElementById("send");
+const user = document.getElementById("userField");
+const message = document.getElementById("messageField");
+const send = document.getElementById("send");
 
 send.addEventListener("click", () => {
   // ensure user and message fields are filled out
